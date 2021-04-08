@@ -7194,6 +7194,17 @@ mustard yellow: #D8BE07;
 honey mustard: #EBD489;
 
 *************************************************** */
+.jumbotron {
+  background: #D8BE07; }
+
+.btn-primary {
+  background: #8D271B;
+  border: none; }
+
+.btn-primary:hover {
+  background: #EDE5CC;
+  color: #8D271B; }
+
 footer p {
   text-align: center;
   color: #EDE5CC; }
