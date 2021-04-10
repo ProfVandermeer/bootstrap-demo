@@ -31,7 +31,14 @@ $ww_honeymustard: #EBD489;
   background: $ww_mayo;
   color: $ww_ketchup;
 }
-
+.btn-primary:focus {
+  border: none;
+}
+.btn-primary:not(:disabled):not(.disabled):focus, .btn-primary:not(:disabled):not(.disabled).focus, , .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+  background: $ww_relish;
+  border: none;
+  color: $ww_mayo;
+}
 // ****************************mixin examples
 // Example 2 with optional parameter (color)
   @mixin colorCenter ($color) {
@@ -39,13 +46,13 @@ $ww_honeymustard: #EBD489;
     color: $color;
   }
 
-  footer p {
-    @include colorCenter($ww_mayo);
-  }
-
-  footer h6 {
-    @include colorCenter($ww_ketchup);
-  }
+  // footer p {
+  //   @include colorCenter($ww_mayo);
+  // }
+  //
+  // footer h6 {
+  //   @include colorCenter($ww_ketchup);
+  // }
 
 @mixin transform($property){
 
@@ -68,6 +75,9 @@ section {
 }
 
 // ******************************** Navigation Styles
+nav.navbar {
+  padding-left: 15%;
+}
 
 .bg-light {
   background-color: $ww_ketchup !important;
@@ -113,8 +123,11 @@ h4 {
 
 footer {
   background: $ww_relish;
-  color: white;
+  color: $ww_mayo;
 }
+
+// Carousel styles
+
 
 // **********************************************Media Queries
 

@@ -7205,13 +7205,13 @@ honey mustard: #EBD489;
   background: #EDE5CC;
   color: #8D271B; }
 
-footer p {
-  text-align: center;
-  color: #EDE5CC; }
+.btn-primary:focus {
+  border: none; }
 
-footer h6 {
-  text-align: center;
-  color: #8D271B; }
+.btn-primary:not(:disabled):not(.disabled):focus, .btn-primary:not(:disabled):not(.disabled).focus, .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+  background: #648813;
+  border: none;
+  color: #EDE5CC; }
 
 .nav-item a:hover {
   -webkit-transform: rotate(10deg);
@@ -7223,6 +7223,9 @@ body {
 
 section {
   padding-bottom: 4em; }
+
+nav.navbar {
+  padding-left: 15%; }
 
 .bg-light {
   background-color: #8D271B !important; }
@@ -7254,7 +7257,7 @@ section.row.popover-examps {
 
 footer {
   background: #648813;
-  color: white; }
+  color: #EDE5CC; }
 
 @media (min-width: 1500px) {
   .container {
